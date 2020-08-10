@@ -1,14 +1,14 @@
 {
-  "name": "anton",
-  "version": "1.0.0",
-  "description": "",
+  "name": "simple-ua-parser",
+  "version": "0.0.2",
+  "description": "It accepts file with UA strings and makes CSV from them",
   "scripts": {
-    "parse": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "parse": "node ua-parser.js"
   },
-  "author": "",
+  "author": "metastasis",
   "license": "ISC",
   "dependencies": {
+    "cac": "6.6.1",
     "ua-parser-js": "0.7.21"
   }
 }
