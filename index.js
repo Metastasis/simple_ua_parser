@@ -1,9 +1,10 @@
-const cli = require('cac')()
+const cliFactory = require('cac')
 const pkg = require('./package.json');
 const {saveAndParse} = require('./ua-parser');
 
+const cli = cliFactory(`${pkg.name}.exe`)
 cli
-  .command('parse [file]', 'File with User Agent strings')
+  .command('[file]', 'File with User Agent strings')
   .option(
     '--output <file>',
     'Output to this file',

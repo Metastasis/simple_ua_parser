@@ -3,12 +3,16 @@
   "version": "0.0.2",
   "description": "It accepts file with UA strings and makes CSV from them",
   "scripts": {
-    "parse": "node ua-parser.js"
+    "parse": "node ua-parser.js",
+    "build": "nexe index.js -t x86-8.0.0"
   },
   "author": "metastasis",
   "license": "ISC",
   "dependencies": {
     "cac": "6.6.1",
     "ua-parser-js": "0.7.21"
+  },
+  "devDependencies": {
+    "nexe": "3.3.7"
   }
 }
